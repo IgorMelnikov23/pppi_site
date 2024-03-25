@@ -1,0 +1,220 @@
+<html>
+<head>
+<title>3D-Редактор</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class='container'>
+<div class='main-block'>
+<h1>3d-редактор</h1>
+
+<h2><i class="fa fa-link" aria-hidden="true"></i> Ссылки:</h2>
+<ul>
+<li><a href='docs/help.html' target="_blank">Руководство в формате HTML</a> (doc-блоки, руководство программиста, лаб. работа 4)
+<li><a href='docs/help.chm' target="_blank">Руководство в формате CHM</a> (руководство пользователя, лаб. работа 5)
+</ul>
+
+<h2>Компоненты/их описание:</h2>
+<div class="accordion" id="accordionExample">
+ 
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading1">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+       <i class="fa fa-tasks" aria-hidden="true"></i>Структура программы
+      </button>
+    </h2>
+    <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="heading1" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+       <ul>
+	   <li> панели/окна программы
+	   <li> справка о программе
+	   <li> обучающие видео по работе с программой
+       <li> окно “О программе”: название, автор и версия текущей программы
+	   </ul>
+      </div>
+    </div>
+  </div>
+  
+  <br>
+  
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading2">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+       <i class="fa fa-tasks" aria-hidden="true"></i>Проект и настройки проекта
+      </button>
+    </h2>
+    <div id="collapse2" class="accordion-collapse collapse show" aria-labelledby="heading2" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+	   <ul>
+	   <li> Установка названия проекта
+	   <li> Установка имени проекта
+	   </ul>
+	  </div>
+    </div>
+</div>
+
+<br>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="heading3">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+       <i class="fa fa-tasks" aria-hidden="true"></i>Сцена и настройка сцены
+      </button>
+    </h2>
+    <div id="collapse3" class="accordion-collapse collapse show" aria-labelledby="heading3" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+	   <ul>
+	   <li> работа с камерами: инструменты для перемещения камер по сцене
+	   <li> освещение сцены: настройка общего освещения всей сцены
+	   <li> задний фон сцены: настройка заднего фона сцены
+	   </ul>
+	  </div>
+    </div>
+</div>
+
+<br>
+
+ <div class="accordion-item">
+    <h2 class="accordion-header" id="heading4">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+       <i class="fa fa-tasks" aria-hidden="true"></i>Панель инструментов
+      </button>
+    </h2>
+    <div id="collapse4" class="accordion-collapse collapse show" aria-labelledby="heading4" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+	   <ul>
+	   <li> работа с объектом: инструменты для изменения параметров выбранного объекта (перемещение, масштабирование, изменение угла поворота выбранного объекта)
+	   <li> инструменты для копирования и вставки выбранных объектов
+       <li> инструмент для моделирования примитивных объектов
+	   </ul>
+	  </div>
+    </div>
+</div>
+
+<br>
+
+ <div class="accordion-item">
+    <h2 class="accordion-header" id="heading5">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+       <i class="fa fa-tasks" aria-hidden="true"></i>Моделирование и дизайн примитивных объектов
+      </button>
+    </h2>
+    <div id="collapse5" class="accordion-collapse collapse show" aria-labelledby="heading5" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+	   <ul>
+	   <li> твердотельное моделирование: инструменты для работы с операциями <b>union</b>, <b>substract</b>, <b>intersect</b>, <b>exclude</b>
+	   <li> cкульптинг: инструменты для детализации объектов
+	   </ul>
+	  </div>
+    </div>
+</div>
+
+<br>
+
+ <div class="accordion-item">
+    <h2 class="accordion-header" id="heading6">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+       <i class="fa fa-tasks" aria-hidden="true"></i>Объект и панель свойств объекта (параметры объекта)
+      </button>
+    </h2>
+    <div id="collapse6" class="accordion-collapse collapse show" aria-labelledby="heading6" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+	   <ul>
+	   <li> позиция и размеры: установка позиции (x, y, z) и размеров (длина, ширина, высота) выбранного объекта
+	   <li> цвет: выбор и установка цвета выбранного объекта
+       <li> текстурирование и шейдеры: выбор и установка текстуры/шейдера на выбранный объект
+       <li> прозрачность: установка и настройка прозрачности объекта
+       <li> свечение: установка и настройка свечения объекта
+       <li> переменные для объекта: создание, установка и удаление дополнительных переменных для конкретного объекта 
+	   </ul>
+	  </div>
+    </div>
+</div>
+
+<br>
+
+ <div class="accordion-item">
+    <h2 class="accordion-header" id="heading7">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+       <i class="fa fa-tasks" aria-hidden="true"></i>Объект и панель свойств объекта (параметры объекта)
+      </button>
+    </h2>
+    <div id="collapse7" class="accordion-collapse collapse show" aria-labelledby="heading7" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+	   <ul>
+	  <li> “таймлайн”: последовательность кадров, которые формируют временную линию
+      <li> кнопки управления анимацией: “запуск”, “приостановка”, “остановка” анимации
+      <li> кнопки редактирования анимации: создание, удаление анимации
+      <li> кнопка настройки “лаймлайна”: настройка частоты и количества кадров
+ </ul>
+	  </div>
+    </div>
+</div>
+
+<br>
+
+<div class="accordion-item">
+    <h2 class="accordion-header" id="heading8">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+       <i class="fa fa-tasks" aria-hidden="true"></i>Особенности под конкретную ОС
+      </button>
+    </h2>
+    <div id="collapse8" class="accordion-collapse collapse show" aria-labelledby="heading8" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+	   <ul>
+	  <li> “горячие клавиши”: для разных семейств операционных систем разные “горячие клавиши”
+      <li> быстрый просмотр анимации проекта без открытия самой программы: MacOS поддерживает “лёгкий” просмотр файлов без открытия в конкретной программе, где это было сделано
+      <li> быстрая установка программы: Linux и MacOS поддерживают быструю установку программы, которая заключается в вводе определённой команды в терминал
+      <li> шрифты: версии программы по Linux, Windows и MacOS отличаются разными шрифтами, которые будут в программе
+ </ul>
+	  </div>
+    </div>
+</div>
+
+<br>
+
+<div class="accordion-item">
+    <h2 class="accordion-header" id="heading9">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+       <i class="fa fa-tasks" aria-hidden="true"></i>Сохранение и экспорт проекта
+      </button>
+    </h2>
+    <div id="collapse9" class="accordion-collapse collapse show" aria-labelledby="heading9" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+	   <ul>
+	   <li> загрузка/сохранение проекта: возможность загрузить, сохранить проект (два способа: сохранить в текущий файл и сохранить в новый файл)
+	   <li> экспорт (рендеринг) проекта: возможность экспортировать анимацию проекта в разные форматы .avi, .mp4, .mov
+      </ul>
+	  </div>
+    </div>
+</div>
+
+<br>
+
+<div class="accordion-item">
+    <h2 class="accordion-header" id="heading10">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+       <i class="fa fa-tasks" aria-hidden="true"></i>Сохранение и экспорт проекта
+      </button>
+    </h2>
+    <div id="collapse10" class="accordion-collapse collapse show" aria-labelledby="heading10" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+	   Дополнительные инструмент, которые можно использовать для расширения функционала базовой программы
+	  </div>
+    </div>
+</div>
+
+</div>
+
+<h4>Автор: Мельников Игорь</h4>
+<h4>Год: 2024</h4>
+
+</div>
+</body>
+
+
+</html>
